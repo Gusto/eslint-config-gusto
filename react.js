@@ -2,8 +2,10 @@ module.exports = {
   plugins: [
     'react'
   ],
-  ecmaFeatures: {
-    'jsx': true
+  parserOptions: {
+    ecmaFeatures: {
+      'jsx': true
+    }
   },
   rules: {
     // React
@@ -12,6 +14,47 @@ module.exports = {
     'jsx-quotes': [2, 'prefer-single'],
     // Prevent missing displayName in a React component definition
     'react/display-name': 0,
+    // Forbid certain propTypes (any, array, object)
+    'react/forbid-prop-types': [0, { 'forbid': ['any', 'array', 'object'] }],
+    // Prevent usage of dangerous JSX properties
+    'react/no-danger': 0,
+    // Prevent usage of deprecated methods
+    'react/no-deprecated': [0, {'react': '0.13.3'}],
+    // Prevent usage of setState in componentDidMount
+    'react/no-did-mount-set-state': [2, 'allow-in-func'],
+    // Prevent usage of setState in componentDidUpdate
+    'react/no-did-update-set-state': [2, 'allow-in-func'],
+    // Prevent direct mutation of this.state
+    'react/no-direct-mutation-state': 2,
+    // Prevent usage of isMounted
+    'react/no-is-mounted': 2,
+    // Prevent multiple component definition per file
+    'react/no-multi-comp': 0,
+    // Prevent usage of setState
+    'react/no-set-state': 0,
+    // Prevent using string references
+    'react/no-string-refs': 0,
+    // Prevent usage of unknown DOM property
+    'react/no-unknown-property': 2,
+    // Require ES6 class declarations over React.createClass
+    'react/prefer-es6-class': [0, 'always'],
+    // Require stateless functions when not using lifecycle methods, setState or ref
+    'react/prefer-stateless-function': 0,
+    // Prevent missing props validation in a React component definition
+    'react/prop-types': [2, { 'ignore': [], 'customValidators': [] }],
+    // Prevent missing React when using JSX
+    'react/react-in-jsx-scope': 2,
+    // Restrict file extensions that may be required
+    'react/require-extension': [0, { 'extensions': ['.jsx'] }],
+    // Prevent extra closing tags for components without children
+    'react/self-closing-comp': 2,
+    // Enforce component methods order
+    'react/sort-comp': 0,
+    // Enforce propTypes declarations alphabetical sorting
+    'react/sort-prop-types': 0,
+    // Prevent missing parentheses around multilines JSX
+    'react/wrap-multilines': 2,
+
     // Enforce boolean attributes notation in JSX
     'react/jsx-boolean-value': 0,
     // Validate closing bracket location in JSX
@@ -28,29 +71,25 @@ module.exports = {
     'react/jsx-indent': [2, 2],
     // Validate JSX has key prop when in array or iterator
     'react/jsx-key': 2,
+    // Limit maximum of props on a single line in JSX
+    'react/jsx-max-props-per-line': 0,
     // Prevent usage of .bind() and arrow functions in JSX props
     'react/jsx-no-bind': 0,
     // Prevent duplicate props in JSX
     'react/jsx-no-duplicate-props': 2,
+    // Prevent usage of unwrapped JSX strings
+    'react/jsx-no-literals': 0,
     // Disallow undeclared variables in JSX
     'react/jsx-no-undef': 2,
     // Enforce PascalCase for user-defined JSX components
     'react/jsx-pascal-case': 2,
+    // Enforce props alphabetical sorting
+    'react/jsx-sort-props': 0,
+    // Enforce spaces before the closing bracket of self-closing JSX elements
+    'react/jsx-space-before-closing': [2, 'always'],
+    // Prevent React to be incorrectly marked as unused
     'react/jsx-uses-react': 2,
-    'react/jsx-uses-vars': 2,
-    // Prevent usage of deprecated methods
-    'react/no-deprecated': [0, {'react': '0.13.3'}],
-    'react/no-did-mount-set-state': [2, 'allow-in-func'],
-    'react/no-did-update-set-state': [2, 'allow-in-func'],
-    // Prevent usage of isMounted
-    'react/no-is-mounted': 2,
-    'react/no-unknown-property': 2,
-    'react/no-multi-comp': 0,
-    // Prevent direct mutation of this.state
-    'react/no-direct-mutation-state': 2,
-    'react/prop-types': 2,
-    'react/react-in-jsx-scope': 2,
-    'react/self-closing-comp': 2,
-    'react/wrap-multilines': 2
+    // Prevent variables used in JSX to be incorrectly marked as unused
+    'react/jsx-uses-vars': 2
   }
 };
