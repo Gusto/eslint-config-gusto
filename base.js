@@ -13,6 +13,10 @@ module.exports = {
 
     // disallow unnecessary parentheses
     'no-extra-parens': [2, 'functions'],
+    // disallow use of Object.prototypes builtins directly
+    'no-prototype-builtins': 2,
+    // disallow return/throw/break/continue inside finally blocks
+    'no-unsafe-finally': 2,
     // Ensure JSDoc comments are valid
     'valid-jsdoc': 0,
 
@@ -260,6 +264,17 @@ module.exports = {
     'no-inline-comments': 0,
     // disallow if as the only statement in an else block
     'no-lonely-if': 0,
+    // disallow un-paren'd mixes of different operators
+    'no-mixed-operators': [2, {
+      groups: [
+        ['+', '-', '*', '/', '%', '**'],
+        ['&', '|', '^', '~', '<<', '>>', '>>>'],
+        ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
+        ['&&', '||'],
+        ['in', 'instanceof']
+      ],
+      allowSamePrecedence: false
+    }],
     // disallow multiple empty lines
     'no-multiple-empty-lines': 0,
     // disallow negated conditions
@@ -287,6 +302,16 @@ module.exports = {
     'no-whitespace-before-property': 2,
     // require padding inside curly braces
     'object-curly-spacing': [0, 'always'],
+    // enforce line breaks between braces
+    // TODO: enable once https://github.com/eslint/eslint/issues/6488 is resolved
+    'object-curly-newline': [0, {
+      ObjectExpression: { minProperties: 0, multiline: true },
+      ObjectPattern: { minProperties: 0, multiline: true }
+    }],
+    // enforce "same line" or "multiple line" on object properties.
+    'object-property-newline': [0, {
+      allowMultiplePropertiesPerLine: true
+    }],
     // allow just one var statement per function
     'one-var': [2, 'never'],
     // require a newline around variable declaration
@@ -296,7 +321,7 @@ module.exports = {
     // enforce operators to be placed before or after line breaks
     'operator-linebreak': 0,
     // enforce padding within blocks
-    'padded-blocks': 0,
+    'padded-blocks': [2, 'never'],
     // require quotes around object literal property names
     'quote-props': 0,
     // specify whether double or single quotes should be used
@@ -316,7 +341,7 @@ module.exports = {
     // require or disallow a space before function opening parenthesis
     'space-before-function-paren': [2, 'never'],
     // require or disallow spaces inside parentheses
-    'space-in-parens': 0,
+    'space-in-parens': [2, 'never'],
     // require spaces around operators
     'space-infix-ops': 2,
     // require a space around word operators such as typeof
@@ -343,8 +368,16 @@ module.exports = {
     'no-duplicate-imports': 2,
     // restrict usage of specified node imports
     'no-restricted-imports': 0,
+    // disallow useless computed property keys
+    'no-useless-computed-key': 2,
     // disallow unnecessary constructor
     'no-useless-constructor': 2,
+    // disallow renaming import, export, and destructured assignments to the same name
+    'no-useless-rename': [2, {
+      ignoreDestructuring: false,
+      ignoreImport: false,
+      ignoreExport: false
+    }],
     'no-var': 2,
     'object-shorthand': 0,
     // suggest using arrow functions as callbacks
@@ -360,6 +393,8 @@ module.exports = {
     'prefer-template': 2,
     // disallow generator functions that do not have yield
     'require-yield': 0,
+    // enforce spacing between object rest-spread
+    'rest-spread-spacing': [2, 'never'],
     // enforce spacing around embedded expressions of template strings
     'template-curly-spacing': 0,
     // enforce spacing around the * in yield* expressions

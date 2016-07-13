@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-gusto",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Gusto shared ESLint config",
   "main": "index.js",
   "author": "Rylan Collins <rylan@gusto.com>",
@@ -14,11 +14,11 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "babel-eslint": "6.0.2",
-    "eslint": "2.7.0"
+    "babel-eslint": "6.1.2",
+    "eslint": "3.0.1"
   },
   "peerDependencies": {
-    "babel-eslint": "6.0.2",
-    "eslint": "2.7.0"
+    "babel-eslint": "6.1.2",
+    "eslint": "3.0.1"
   }
 }

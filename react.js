@@ -7,6 +7,12 @@ module.exports = {
       'jsx': true
     }
   },
+  settings: {
+    react: {
+      pragma: 'React',  // Pragma to use, default to "React"
+      version: '0.13.3' // React version, default to the latest React stable release
+    }
+  },
   rules: {
     // React
 
@@ -46,6 +52,8 @@ module.exports = {
     'react/react-in-jsx-scope': 2,
     // Restrict file extensions that may be required
     'react/require-extension': [0, { 'extensions': ['.jsx'] }],
+    // Enforce ES5 or ES6 class for returning value in render function
+    'react/require-render-return': 2,
     // Prevent extra closing tags for components without children
     'react/self-closing-comp': 2,
     // Enforce component methods order
@@ -62,7 +70,9 @@ module.exports = {
     // Enforce or disallow spaces inside of curly braces in JSX attributes
     'react/jsx-curly-spacing': 0,
     // Enforce or disallow spaces around equal signs in JSX attributes
-    'react/jsx-equals-spacing': [0, 'never'],
+    'react/jsx-equals-spacing': [2, 'never'],
+    // Require that the first prop in a JSX element be on a new line when the element is multiline
+    'react/jsx-first-prop-new-line': [2, 'multiline'],
     // Enforce event handler naming conventions in JSX
     'react/jsx-handler-names': 0,
     // Validate props indentation in JSX
@@ -79,6 +89,9 @@ module.exports = {
     'react/jsx-no-duplicate-props': 2,
     // Prevent usage of unwrapped JSX strings
     'react/jsx-no-literals': 0,
+    // disallow target="_blank" on links
+    // TODO: enable
+    'react/jsx-no-target-blank': 0,
     // Disallow undeclared variables in JSX
     'react/jsx-no-undef': 2,
     // Enforce PascalCase for user-defined JSX components
