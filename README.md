@@ -11,12 +11,12 @@ There are three ESLint config available. All three require `eslint` and `babel-e
 The default config contains all defined rules, including ES6 and React. It requires
 `eslint-plugin-react`.
 
-1. `npm install --save-dev gusto/eslint-config-gusto eslint babel-eslint eslint-plugin-react`
+1. `yarn add --dev eslint babel-eslint eslint-plugin-react gusto/eslint-config-gusto`
 2. Add `"extends": "gusto"` to your `.eslintrc` file
 
 ### eslint-config-gusto/base
 
 The base config contains only rules for ES6 (without React).
 
-1. `npm install --save-dev gusto/eslint-config-gusto eslint babel-eslint`
+1. `yarn add --dev  eslint babel-eslint gusto/eslint-config-gusto`
 2. Add `"extends": "gusto/base"` to your `.eslintrc` file
