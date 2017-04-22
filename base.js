@@ -34,44 +34,16 @@ module.exports = {
     'no-multi-spaces': 'off',
     // disallow reassignment of function parameters
     'no-param-reassign': 'off',
-    // disallow certain object properties
-    // http://eslint.org/docs/rules/no-restricted-properties
-    'no-restricted-properties': ['error', {
-      object: 'arguments',
-      property: 'callee',
-      message: 'arguments.callee is deprecated,',
-    }, {
-      property: '__defineGetter__',
-      message: 'Please use Object.defineProperty instead.',
-    }, {
-      property: '__defineSetter__',
-      message: 'Please use Object.defineProperty instead.',
-    }],
     // disallow use of assignment in return statement
     'no-return-assign': 'off',
     // disallow use of javascript: urls.
     'no-script-url': 'off',
     // disallow usage of expressions in statement position
     'no-unused-expressions': 'off',
-    // requires to declare all vars on top of their containing scope, covered by let/const
-    'vars-on-top': 'off',
-    // require immediate function invocation to be wrapped in parentheses
-    // http://eslint.org/docs/rules/wrap-iife.html
-    'wrap-iife': ['error', 'inside', { functionPrototypeMethods: false }],
-
-    // Node.js
-    // These rules are specific to JavaScript running on Node.js.
-
-    // disallow use of new operator with the require function (on by default in the node environment)
-    'no-new-require': 'off',
-    // disallow string concatenation with __dirname and __filename (on by default in the node environment)
-    'no-path-concat': 'off',
 
     // Stylistic Issues
     // These rules are purely matters of style and are quite subjective.
 
-    // enforce spacing inside array brackets
-    'array-bracket-spacing': ['off', 'never'],
     // require trailing commas in multiline object literals
     'comma-dangle': 'off',
     // require function expressions to have a name
@@ -80,8 +52,6 @@ module.exports = {
     indent: ['error', 2],
     // enforce spacing between keys and values in object literal properties
     'key-spacing': 'off',
-    // enforce spacing before and after keywords
-    'keyword-spacing': 'error',
     // specify the maximum length of a line in your program
     // http://eslint.org/docs/rules/max-len
     'max-len': ['error', 120, 2, {
@@ -91,17 +61,10 @@ module.exports = {
       ignoreStrings: true,
       ignoreTemplateLiterals: true,
     }],
-    // require a capital letter for constructors
-    'new-cap': ['error', {
-      newIsCap: true,
-      capIsNewExceptions: [],
-    }],
     // enforce newline after each call when chaining the calls
     'newline-per-chained-call': 'off',
     // disallow use of bitwise operators
     'no-bitwise': 'off',
-    // disallow use of the continue statement
-    'no-continue': 'off',
     // disallow use of chained assignment expressions
     // http://eslint.org/docs/rules/no-multi-assign
     'no-multi-assign': ['off'],
@@ -115,8 +78,6 @@ module.exports = {
     'no-restricted-syntax': 'off',
     // disallow dangling underscores in identifiers
     'no-underscore-dangle': 'off',
-    // require padding inside curly braces
-    'object-curly-spacing': ['off', 'always'],
     // enforce "same line" or "multiple line" on object properties.
     'object-property-newline': ['off', {
       allowMultiplePropertiesPerLine: true
