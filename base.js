@@ -1,5 +1,5 @@
 module.exports = {
-  extends: 'airbnb-base',
+  extends: 'airbnb',
   parser: 'babel-eslint',
   env: {
     es6: true,
@@ -143,6 +143,7 @@ module.exports = {
     'import/no-extraneous-dependencies': ['error', {
       devDependencies: [
         'spec/**', // mocha, rspec-like pattern
+        'test/**', // mocha, rspec-like pattern
         'frontend/javascripts/spec/**', // mocha, rspec-like pattern
         '**/*_spec.js*', // tests where the extension denotes that it is a test
         '**/webpack.config.js', // webpack config
