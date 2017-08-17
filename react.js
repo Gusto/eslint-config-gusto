@@ -1,16 +1,7 @@
 module.exports = {
-  plugins: [
-    'react'
-  ],
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    }
-  },
   settings: {
     react: {
-      pragma: 'React',  // Pragma to use, default to "React"
-      version: '0.13.3' // React version, default to the latest React stable release
+      version: '15.5.4' // React version, default to the latest React stable release
     }
   },
   rules: {
@@ -22,16 +13,8 @@ module.exports = {
     'react/forbid-prop-types': ['off', { forbid: ['any', 'array', 'object'] }],
     // Enforce boolean attributes notation in JSX
     'react/jsx-boolean-value': 'off',
-    // Validate closing bracket location in JSX
-    'react/jsx-closing-bracket-location': 'off',
     // Enforce or disallow spaces inside of curly braces in JSX attributes
     'react/jsx-curly-spacing': 'off',
-    // Enforce event handler naming conventions in JSX
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-handler-names.md
-    'react/jsx-handler-names': ['off', {
-      eventHandlerPrefix: 'handle',
-      eventHandlerPropPrefix: 'on',
-    }],
     // Validate JSX has key prop when in array or iterator
     'react/jsx-key': 'error',
     // Limit maximum of props on a single line in JSX
@@ -47,9 +30,6 @@ module.exports = {
     'react/jsx-pascal-case': 'error',
     // Prevent usage of dangerous JSX properties
     'react/no-danger': 'off',
-    // Prevent usage of deprecated methods
-    // TODO: enable
-    'react/no-deprecated': ['off'],
     // Prevent usage of setState in componentWillUpdate
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-will-update-set-state.md
     'react/no-will-update-set-state': 'off',
@@ -87,13 +67,6 @@ module.exports = {
     // Prevent invalid characters from appearing in markup
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unescaped-entities.md
     'react/no-unescaped-entities': 'off',
-    // Validate whitespace in and around the JSX opening and closing brackets
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-tag-spacing.md
-    'react/jsx-tag-spacing': ['error', {
-      closingSlash: 'never',
-      beforeSelfClosing: 'always',
-      afterOpening: 'never'
-    }],
     // Prevent usage of Array index in keys
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md
     'react/no-array-index-key': 'off',
