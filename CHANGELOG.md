@@ -1,18 +1,37 @@
 # Changelog
+
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## 7.0.1 - 2017-09-25
+## 8.0.0 - 2017-12-18
+
 ### Added
-- Created a changelog
+
+* `prettier` and `prettier-eslint-cli`
 
 ### Changed
-- Updated package.json dev/peer dependencies to be consistent with one another
-- Updated installation instructions to include proper peer dependencies
-- Updated ESLint config name to work properly – old instructions still specified non-`@gusto` namespace
-- Updated package description and bumped version
+
+* Move peerDependencies to dependencies so other projects don't need to specify them.
 
 ### Removed
-- Removed non-functional `core` config installation instructions
+
+* All of our custom rules.
+
+## 7.0.1 - 2017-09-25
+
+### Added
+
+* Created a changelog
+
+### Changed
+
+* Updated package.json dev/peer dependencies to be consistent with one another
+* Updated installation instructions to include proper peer dependencies
+* Updated ESLint config name to work properly – old instructions still specified non-`@gusto` namespace
+* Updated package description and bumped version
+
+### Removed
+
+* Removed non-functional `core` config installation instructions
