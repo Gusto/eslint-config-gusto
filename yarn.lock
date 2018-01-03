@@ -446,6 +446,10 @@ eslint-config-prettier@2.9.0:
   dependencies:
     get-stdin "^5.0.1"
 
+eslint-formatter-todo@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-formatter-todo/-/eslint-formatter-todo-1.0.1.tgz#c8b13b922a8f45b1471bd0fe6cb6e28946e4291b"
+
 eslint-import-resolver-node@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/eslint-import-resolver-node/-/eslint-import-resolver-node-0.3.1.tgz#4422574cde66a9a7b099938ee4d508a199e0e3cc"
