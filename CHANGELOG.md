@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 
-* `prettier` and `prettier-eslint-cli`
+* `prettier`
 
 ### Changed
 
@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Removed
 
-* All of our custom rules.
+* All of our custom configuration.
 
 ## 7.0.1 - 2017-09-25
 
