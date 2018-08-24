@@ -12,8 +12,6 @@ module.exports = {
   arrowParens: 'avoid',
   rangeStart: 0,
   rangeEnd: Infinity,
-  parser: 'babylon',
-  filepath: undefined,
   requirePragma: false,
   insertPragma: false,
   proseWrap: 'preserve',
