@@ -13,6 +13,7 @@ module.exports = {
         optionalDependencies: false,
       },
     ],
+    'react/destructuring-assignment': false,
   },
 
   settings: {
