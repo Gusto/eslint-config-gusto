@@ -27,7 +27,6 @@ module.exports = {
     // rule deprecated in favor of jsx-a11y/label-has-associated-control
     'jsx-a11y/label-has-for': false,
     'react/destructuring-assignment': false,
-    'react/sort-comp': false,
   },
 
   settings: {
