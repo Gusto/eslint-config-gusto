@@ -13,17 +13,6 @@ module.exports = {
         optionalDependencies: false,
       },
     ],
-    // changes default `assert` value from `both` to `either`
-    'jsx-a11y/label-has-associated-control': [
-      'error',
-      {
-        labelComponents: [],
-        labelAttributes: [],
-        controlComponents: [],
-        assert: 'either',
-        depth: 25,
-      },
-    ],
     // rule deprecated in favor of jsx-a11y/label-has-associated-control
     'jsx-a11y/label-has-for': false,
     'react/destructuring-assignment': false,
