@@ -14,8 +14,8 @@ module.exports = {
       },
     ],
     // rule deprecated in favor of jsx-a11y/label-has-associated-control
-    'jsx-a11y/label-has-for': false,
-    'react/destructuring-assignment': false,
+    'jsx-a11y/label-has-for': 'off',
+    'react/destructuring-assignment': 'off',
   },
 
   settings: {
