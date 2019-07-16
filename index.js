@@ -25,7 +25,7 @@ module.exports = {
       },
     },
     react: {
-      version: '15.5.4',
+      version: 'detect',
     },
   },
 };

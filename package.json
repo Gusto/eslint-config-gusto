@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-gusto",
-  "version": "9.5.1",
+  "version": "9.6.0",
   "description": "A shared ESLint config for Gusto's JS projects",
   "main": "index.js",
   "author": "Rylan Collins <rylan@gusto.com>",
