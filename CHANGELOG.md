@@ -5,9 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## 9.6.0 - 2019-07-16
+## 9.7.0 - 2019-09-19
+
+- All dependencies relaxed - most to `^`
+
+  The intent is to make it more easy and flexible to use this config, and have it require less maintenance. Consuming projects can now choose when to make minor updates. It should also allow for more ease of de-duping versions in consuming projects if there is overlap. If we encounter package-overlap that requires stricter versions we can always tighten these again to `~` or to single version if so needed. `^` was chosen because if packages are using semver correctly there should be no breaking changes. Of course, linting is very touchy so there may be minor or patch versions release that "break" lint by introducing new failures. I still think it's better to be able to update easily and fix these in your projects than to have to wait for a new published version of this config to catch updates.
+
+- Upgraded dependencies:
+
+  - `babel-eslint`: 10.0.1 :arrow_right: 10.0.3
+  - `eslint-config-prettier`: 4.1.0 :arrow_up_small: 4.3.0
+  - `eslint-plugin-import`: 2.17.2 :arrow_up_small: 2.18.2
+  - `eslint-plugin-jsx-a11y`: 6.2.1 :arrow_right: 6.2.3
+  - `eslint-plugin-prettier`: 3.0.1 :arrow_up_small: 3.1.1
+
+## 9.6.0 - 2019-09-18
 
 - Change eslint-plugin-react React version configuration to `'detect'` for more flexibility across projects that use this.
+- Upgraded dependencies:
+  - `eslint-plugin-react`: 10.0.1 :arrow_right: 10.0.3
+    - THIS MAY CAUSE LINT FAILURES - the plugin's ability to detect missing prop-types was improved so it may catch more offenses than before.
 
 ## 9.2.0 - 2018-11-12
 
