@@ -5,7 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## 9.7.0 - 2019-09-19
+## 9.8.0 - 2019-09-19
+
+- Upgraded dependencies:
+  - `eslint-config-prettier`: 4.3.0 :arrow_double_up: 6.3.0
+    - this package mostly disables rules that prettier will handle and probably should have been updated when `prettier` was last updated in `9.5.0`.
+
+## 9.7.0 - 2019-09-18
 
 - All dependencies relaxed - most to `^`
 
@@ -25,6 +31,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Upgraded dependencies:
   - `eslint-plugin-react`: 10.0.1 :arrow_right: 10.0.3
     - THIS MAY CAUSE LINT FAILURES - the plugin's ability to detect missing prop-types was improved so it may catch more offenses than before.
+
+## 9.5.0 - 2019-06-11
+
+- Upgraded dependencies:
+  - `prettier`: 1.17.0. :arrow_up_small: 1.18.2
+    - THIS MAY CAUSE LINT FAILURES - prettier stops breaking template literals
 
 ## 9.2.0 - 2018-11-12
 
