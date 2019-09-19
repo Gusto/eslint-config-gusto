@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - Upgraded dependencies:
 
-  - `eslint`: 5.16.0 :arrow_double_up: 6.4.0 10.0.3
+  - `eslint`: 5.16.0 :arrow_double_up: 6.4.0
   - `eslint-config-airbnb`: 17.1.1 :arrow_double_up: 18.0.1
 
 ## 9.8.0 - 2019-09-19
