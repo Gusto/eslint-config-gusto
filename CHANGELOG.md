@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 9.10.0 - 2019-12-11
+
+- [Feat] minor - Configure the import resolver to include typescript files. This package does not currently handle ts files but consumers may. This configuration makes it so they don't have to override. There shouldn't be any downside for non-ts consumers. "Feature" but should not cause any breaks.
+
 ## 9.9.0 - 2019-11-11
 
 - Upgraded dependencies:
