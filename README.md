@@ -16,7 +16,7 @@ We also include [prettier](https://github.com/prettier/prettier) as a dependency
 ## Installation
 
 ```sh
-yarn add --dev "@gusto/eslint-config-gusto"
+yarn add --dev eslint-config-gusto
 ```
 
 Extend the shared eslint config in your `.eslintrc.js`:
@@ -25,7 +25,7 @@ Extend the shared eslint config in your `.eslintrc.js`:
 // .eslintrc.js
 
 module.exports = {
-  extends: '@gusto/eslint-config-gusto',
+  extends: 'eslint-config-gusto',
   rules: {
     // Your project-specific rules
   },
@@ -37,7 +37,7 @@ Extend the shared prettier config in your `.prettierrc.js`:
 ```js
 // .prettierrc.js
 
-module.exports = require('@gusto/eslint-config-gusto/.prettierrc');
+module.exports = require('eslint-config-gusto/.prettierrc');
 ```
 
 ## Customization
