@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 12.0.0 - 2020-11-23
+
+- [Breaking] Move `eslint` from `dependencies` to `peerDependencies`
+  - Users of this package must add `eslint` to their `dependencies` if it is not already there. 
+
 ## 11.1.0 - 2020-11-23
 
 - Upgraded dependencies:

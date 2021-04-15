@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-gusto",
-  "version": "11.1.0",
+  "version": "12.0.0",
   "description": "A shared ESLint config for Gusto's JS projects",
   "main": "index.js",
   "author": "Rylan Collins <rylan@gusto.com>",
@@ -13,11 +13,14 @@
     "test": "npm run lint",
     "lint": "eslint ."
   },
-  "devDependencies": {},
-  "peerDependencies": {},
+  "devDependencies": {
+    "eslint": "^7.14.0"
+  },
+  "peerDependencies": {
+    "eslint": "^7.14.0"
+  },
   "dependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.14.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^6.15.0",
     "eslint-formatter-todo": "^1.0.1",

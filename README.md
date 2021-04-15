@@ -19,6 +19,11 @@ We also include [prettier](https://github.com/prettier/prettier) as a dependency
 yarn add --dev eslint-config-gusto
 ```
 
+also add `eslint` if not already added
+```
+yarn add --dev eslint
+```
+
 Extend the shared eslint config in your `.eslintrc.js`:
 
 ```js
