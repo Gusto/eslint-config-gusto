@@ -8,7 +8,7 @@ module.exports = {
   singleQuote: true, // default: false
   trailingComma: 'all', // default: 'es5'
   bracketSpacing: true,
-  jsxBracketSameLine: false,
+  bracketSameLine: false,
   arrowParens: 'avoid', // default: 'always'
   rangeStart: 0,
   rangeEnd: Infinity,
