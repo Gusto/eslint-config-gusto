@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 12.1.0 - 2021-09-21
+
+- Upgrade dependencies
+  - eslint from 7.14.0 to 7.32.0
+  - prettier from 2.2.0 to 2.4.1
+  - eslint-config-prettier from 6.15.0 to 8.3.0
+  - eslint-plugin-prettier from 3.1.4 to 4.0.0
+  - eslint-plugin-import from 2.22.1 to 2.24.2
+  - eslint-plugin-react from 7.21.5 to 7.26.0
 
 ## 12.0.1 - 2021-09-11
 
