@@ -15,6 +15,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
   - eslint-plugin-import from 2.22.1 to 2.24.2
   - eslint-plugin-react from 7.21.5 to 7.26.0
 
+## 12.1.0 - 2021-09-21
+- Updated rules for `jsx-a11y/label-has-associated-control` to override default config.
+  - Support associating `label` with a sibling `input`
+
 ## 12.0.1 - 2021-09-11
 
 - Fix: update deprecated configuration option `jsxBracketSameLine` => `bracketSameLine`
