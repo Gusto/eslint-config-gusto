@@ -29,6 +29,7 @@ module.exports = {
       },
     ],
     'react/destructuring-assignment': 'off',
+    'react/function-component-definition': 'off',
   },
 
   settings: {
