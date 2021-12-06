@@ -8,7 +8,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## 13.0.0 - 2021-12-06
 
-- update dependency eslint-config-airbnb from 18 to 19
+- update dependency eslint-config-airbnb from 18.2.1 to 19.0.2
+  - eslint-plugin-import from 2.24.2 to 2.25.3
+  - eslint-plugin-jsx-a11y 6.4.1 to 6.5.1
+  - eslint-plugin-react ^7.26.0 to 7.27.1
 
 ## 12.2.1 - 2021-10-19
 
