@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-gusto",
-  "version": "13.0.0",
+  "version": "14.0.0",
   "description": "A shared ESLint config for Gusto's JS projects",
   "main": "index.js",
   "author": "Rylan Collins <rylan@gusto.com>",
@@ -28,6 +28,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "prettier": "^2.4.1"
   }
 }
