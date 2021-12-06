@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 
+## 13.0.0 - 2021-12-06
+
+- update dependency eslint-config-airbnb from 18 to 19
+
 ## 12.2.1 - 2021-10-19
 
 - update exported configuration to work with eslint-config-prettier@8
