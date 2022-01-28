@@ -28,7 +28,7 @@ module.exports = {
         assert: 'either',
       },
     ],
-    'no-restricted-syntax': ['error', 'ForInStatement', 'LabeledStatement', 'WithStatement'],
+    'no-restricted-syntax': 'off',
     'react/destructuring-assignment': 'off',
     'react/function-component-definition': 'off',
 
