@@ -5,6 +5,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 14.0.2 - 2022-01-28
+- Allow ForOfStatement as modern JS runtimes support it without needing the regenerator runtime. See [https://caniuse.com/?search=for-of](https://caniuse.com/?search=for-of).
+
 ## 14.0.1 - 2021-12-16
 
 - fix desired configuration for `react-hooks/exhaustive-deps`
