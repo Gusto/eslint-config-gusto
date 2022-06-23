@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 14.1.0 - 2022-06-22
+- Allow `eslint@8` in the config and use for package-local linting.
+- Update the default parser to `@babel/eslint-parser` (official relocation from `babel-eslint`)
+
 ## 14.0.2 - 2022-01-28
 - Allow ForOfStatement as modern JS runtimes support it without needing the regenerator runtime. See [https://caniuse.com/?search=for-of](https://caniuse.com/?search=for-of).
 
