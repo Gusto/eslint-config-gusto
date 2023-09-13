@@ -9,6 +9,16 @@
     "url": "https://github.com/Gusto/eslint-config-gusto.git"
   },
   "license": "MIT",
+  "files": [
+    ".eslintrc.js",
+    ".prettierrc.js",
+    ".yarnrc.yml",
+    "CHANGELOG.md",
+    "index.js",
+    "package.json",
+    "README.md",
+    "yarn.lock"
+  ],
   "scripts": {
     "test": "yarn run lint",
     "lint": "eslint ."
