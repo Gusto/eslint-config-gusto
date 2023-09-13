@@ -1,6 +1,12 @@
 module.exports = {
-  extends: ['airbnb', 'airbnb/hooks', 'plugin:prettier/recommended'],
-  parser: '@babel/eslint-parser',
+  extends: [
+    'airbnb',
+    'airbnb/hooks',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
+  ],
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint'],
   env: {
     es6: true,
   },
@@ -37,11 +43,6 @@ module.exports = {
   },
 
   settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx'],
-      },
-    },
     react: {
       version: 'detect',
     },
