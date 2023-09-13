@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 15.0.0 - 2023-09-13
+- Upgrade dependencies
+- Migrate to @typescript-eslint
+- Upgrade Prettier to v3
 ## 14.1.1 - 2023-08-31
 - Upgrade `jsx-eslint/eslint-plugin-jsx-a11y` to v6.6.0
 
