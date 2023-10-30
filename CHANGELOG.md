@@ -5,18 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 16.0.0 - 2023-10-16
+
+- Remove eslint-plugin-prettier
+
 ## 15.0.0 - 2023-09-13
+
 - Upgrade dependencies
 - Migrate to @typescript-eslint
 - Upgrade Prettier to v3
+
 ## 14.1.1 - 2023-08-31
+
 - Upgrade `jsx-eslint/eslint-plugin-jsx-a11y` to v6.6.0
 
 ## 14.1.0 - 2022-06-29
+
 - Allow `eslint@8` in the config and use for package-local linting.
 - Update the default parser to `@babel/eslint-parser` (official relocation from `babel-eslint`)
 
 ## 14.0.2 - 2022-01-28
+
 - Allow ForOfStatement as modern JS runtimes support it without needing the regenerator runtime. See [https://caniuse.com/?search=for-of](https://caniuse.com/?search=for-of).
 
 ## 14.0.1 - 2021-12-16
@@ -50,6 +59,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
   - eslint-plugin-react from 7.21.5 to 7.26.0
 
 ## 12.1.0 - 2021-09-21
+
 - Updated rules for `jsx-a11y/label-has-associated-control` to override default config.
   - Support associating `label` with a sibling `input`
 
@@ -60,7 +70,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## 12.0.0 - 2020-11-23
 
 - [Breaking] Move `eslint` from `dependencies` to `peerDependencies`
-  - Users of this package must add `eslint` to their `dependencies` if it is not already there. 
+  - Users of this package must add `eslint` to their `dependencies` if it is not already there.
 
 ## 11.1.0 - 2020-11-23
 
