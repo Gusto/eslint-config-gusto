@@ -13,7 +13,7 @@ Our eslint config is largely based on [Airbnb's eslint config](https://github.co
 
 We also include [prettier](https://github.com/prettier/prettier) as a dependency - see [the notes](https://prettier.io/docs/en/editors.html) for setting up the prettier plugin in your editor. We're using the [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) which turns off all eslint rules that are unnecessary or might conflict with prettier.
 
-As of v16 of eslint-config-gusto, Prettier should be run as a separate task to improve both performance and the developer experience.
+As of v16 of eslint-config-gusto, prettier should be run separately from eslint in order to improve performance and the developer experience.
 
 ## Installation
 
