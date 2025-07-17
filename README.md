@@ -1,3 +1,7 @@
+# ⚠️ Deprecated ⚠️
+
+This library is no longer supported.
+
 # eslint-config-gusto
 
 A shared code style and formatting config for Gusto's JS projects.
